@@ -1,0 +1,64 @@
+body {margin:0; background-color:lightgray;}
+
+.icon-bar {
+  width: 60px; /* Adjusted width */
+  background-color: lightgray;
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 12px; /* Adjusted padding */
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 24px; /* Adjusted font size */
+  border-radius: 50%; /* Make it circular */
+}
+
+
+
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+    .iconbar {
+        display: show; /* Hide the icon bar on smaller screens */
+    }
+}
+
+.iconbar {
+width: 100%;
+overflow: auto;
+}
+
+.iconbar a {
+float: left;
+width: 20%;
+text-align: center;
+padding: 5px 0;
+transition: all 0.3s ease;
+color: white;
+font-size: 25px;
+}
+
+button:hover {
+    visibility: hidden;
+}
+
+
+@media (min-width: 768px) {
+        .container {
+            margin: auto;
+        }
+        .navbar  {
+                height: auto;
+                width:auto;
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .nav {
+                flex-direction: column;
+                align-items: center;
+            }
+        } 
+

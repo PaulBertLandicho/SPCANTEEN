@@ -1,0 +1,107 @@
+body {
+    margin-top: 10px; 
+    background-color: lightgray;
+  }
+  
+  .product-container {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      max-width: 380px;
+      height: 290px;
+      position: sticky;
+      z-index: 999; /* Ensure it appears above other content */
+      
+  }
+  .product-name {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 5px;
+  }
+    
+  .icon-bar {
+    width: 100%;
+    position: fixed;
+    background-color: maroon;
+    overflow: auto;
+    bottom: 0;
+    z-index: 999; /* Ensure it appears above other content */
+    }
+    
+    .icon-bar a {
+    float: left;
+    width: 20%;
+    height: 70px;
+    text-align: center;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 25px;
+    }
+
+  /* Media query for responsiveness */
+  @media screen and (max-width: 768px) {
+    .iconbar {
+        display: show; /* Hide the icon bar on smaller screens */
+    }
+}
+
+.iconbar {
+    width: 100%;
+    background-color: maroon;
+    overflow: auto;
+    margin-top: 650px;
+}
+
+.iconbar a {
+    float: left;
+    width: 20%;
+    text-align: center;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 25px;
+}
+
+.product-container {
+    display: flex;
+    margin-bottom: 20px;
+    margin-left:17px;
+    width:590px;
+    padding:10px;
+    height:120px;
+}
+
+.product-image {
+    margin-right: 20px;
+}
+
+.product-details {
+    flex-grow: 1;
+}
+
+.product-details form {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-input {
+    width: 30px;
+    height:20px;
+    text-align: center;
+    margin: 0 10px;
+    border: none;
+}
+.button-maroon {
+  background-color: maroon;
+border-radius: 50px;
+}
+.container {
+display: flex;
+justify-content: flex-end; /* Align items to the right side */
+}
+

@@ -1,0 +1,214 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: lightgray;
+    max-height: 599px;
+    display: flex;
+    align-items: center;
+  }
+    
+    body {margin:0}
+    
+    .icon-bar {
+    width: 220px; /* Adjusted width */
+    background-color: white;  
+    position: sticky;
+    top: 0;
+    z-index: 999; /* Ensure it appears above other content */
+    }
+    
+    .icon-bar a {
+    display: block;
+    text-align: left;
+    padding: 12px; /* Adjusted padding */
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    color: black;
+    font-size: 17px; /* Adjusted font size */
+    
+    }
+    
+    .icon-bar a:hover {
+      background-color: maroon;
+      color:white;
+      border-radius: 10px;
+      }
+   .active {
+        color: black; /* Default color */
+    }
+  
+    .active:hover {
+        color: maroon; /* Color on hover */
+    }
+    .containershadow{
+        width: 305px;
+        height: 650px;
+        margin-top: 50px;
+        background-color: white;
+      }
+
+.page-title {
+font-size: 45px;
+font-weight: 600;
+margin-bottom: 170px;
+margin-top: 1px;
+
+color: #333;
+}
+.search-form {
+display: flex; /* Use flexbox to align items */
+justify-content: flex-end; /* Align items to the end (right side) */
+margin-top: 60px;
+}
+
+.search-form input[type="text"] {
+width: 200px; /* Adjust the width as needed */
+padding: 10px;
+border: none;
+border-radius: 5px;
+
+}
+
+
+.search-form .search-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 70px; /* Add some space between the input and button */
+}
+
+.search-form .search-button i {
+    /* Adjust icon size and alignment */
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+
+.add-product-btn {
+background-color: white;
+color: black;
+padding: 10px;
+box-shadow: 0px 0px 15px rgba(0, 0, 0, 5.1);
+text-decoration: none;
+border-radius: 5px;
+margin-left: 15px;
+}
+
+
+.product-container {
+display: inline-block; /* Display product containers inline */
+align-items: center;
+background-color: lightgray;
+padding:20px;
+border-radius: 30px;
+height: 250px;
+vertical-align: top; /* Align product containers to the top */
+margin-right: none; /* Adjust spacing between product containers */
+width: calc(33.33% - 20px); /* Set the width of each product container to one-third of the container width minus some margin */
+margin: 10px; /* Add margin around each product container */
+}
+
+
+
+.product-details {
+flex: 1;
+
+}
+
+.product-name {
+font-size: 24px;
+font-weight: bold;
+margin-bottom: 5px;
+color:white;
+}
+
+.product-details a {
+display: inline-block;
+margin-right: 10px;
+text-decoration: none;
+padding: 5px 9px;
+border-radius: 5px;
+color: #fff;
+}
+
+.product-details a.update-btn {
+background-color:white;
+color: maroon;
+height:30px;
+width: 33px;
+font-size: 18;
+margin-top:0px;
+}
+
+
+#product-list-container {
+max-height: 470px; /* Adjust the maximum height as needed */
+width: 990px; /* Adjust the maximum height as needed */
+overflow-y: auto; /* Enable vertical scrollbar */
+white-space: nowrap; /* Prevent wrapping of product containers */
+padding: 15px; /* Adjust padding */
+margin-bottom: 20px; /* Adjust margin */
+position: relative; /* Make the position relative */
+left: 45%; /* Move container 50% to the right */
+transform: translateX(-50%); /* Adjust horizontal position */
+cursor: pointer; /* Change cursor to pointer */
+display: flex; /* Use flexbox to allow items to wrap */
+flex-wrap: wrap; /* Allow items to wrap to the next line */
+margin-left: 40px;
+
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 3px 10px;
+    text-decoration: none;
+  }
+  
+  .pagination a.active {
+    background-color: maroon;
+    color: white;
+    border-radius: 35px;
+  }
+  
+  .pagination a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+  }
+
+  .container-scroll {
+    max-height: 520px; /* Set the maximum height of the container */
+    overflow-y: auto; /* Enable vertical scrolling */
+    margin-top:10px;
+}
+.deletebtn {
+background-color: red; /* Set background color for delete button */
+color: white; /* Set text color */
+border: none; /* Remove border */
+padding: 10px 20px; /* Add padding */
+cursor: pointer; /* Change cursor on hover */
+}
+
+.deletebtn:hover {
+background-color: darkred; /* Darken background color on hover */
+}
+
+.update-btn {
+background-color: green; /* Set background color for update button */
+color: white; /* Set text color */
+border: none; /* Remove border */
+padding: 10px 20px; /* Add padding */
+cursor: pointer; /* Change cursor on hover */
+}
+
+.update-btn:hover {
+background-color: darkgreen; /* Darken background color on hover */
+}
